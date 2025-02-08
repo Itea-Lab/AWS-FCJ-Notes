@@ -9,7 +9,7 @@
 - **Trung tâm dữ liệu** của AWS sử dụng thiết bị phần cứng được tối ưu hóa, điều này dẫn đến sự khác biệt trong hiệu suất so với các nhà cung cấp khác.
 - Để so sánh hiệu suất giữa các nhà cung cấp, cần sử dụng các công cụ **benchmark** thay vì chỉ dựa vào thông số cấu hình như CPU hay RAM.
 - Ví dụ, ứng dụng **SAP** có bộ công cụ đo hiệu suất riêng, cho phép so sánh hiệu suất của dịch vụ trên các nền tảng khác nhau.
-![Pasted image 20250207100729](AWS/Notes/Module%201/attachments/Pasted%20image%2020250207100729.png)
+![](AWS/Notes/Module%201/attachments/Pasted%20image%2020250207100729.png)
 ## Availability Zone và Isolation
 - Một **Availability Zone (AZ)** bao gồm một hoặc nhiều trung tâm dữ liệu và được thiết kế để không xảy ra sự cố ảnh hưởng đồng thời đến nhiều AZ.
 - **Force isolation** là một khái niệm quan trọng, đảm bảo rằng các sự cố tự nhiên như động đất chỉ ảnh hưởng đến một AZ.
