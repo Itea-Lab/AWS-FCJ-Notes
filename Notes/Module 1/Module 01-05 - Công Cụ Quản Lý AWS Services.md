@@ -18,24 +18,24 @@
     - **IAM User**: Tài khoản con được tạo ra để quản lý việc truy cập và sử dụng tài nguyên AWS, giúp bảo mật hơn cho tài khoản chính.
 ### Quy trình Đăng nhập
 - Khi đăng nhập vào **AWS Management Console**, người dùng sẽ thấy danh sách các dịch vụ của AWS. Sau khi đăng nhập bằng root user, người dùng có thể tạo IAM User để quản lý truy cập trong tương lai.
-	![[Pasted image 20250208152200.png]]
+	![[AWS/Notes/Module 1/attachments/Root_Login.png]]
 - Để đăng nhập lần thứ hai, người dùng cần cung cấp **Account ID**, một chuỗi gồm 12 chữ số để xác định tài khoản.
-	![[Pasted image 20250208152407.png]]
+	![[AWS/Notes/Module 1/attachments/IAM_Login.png]]
 ## Giao diện Quản lý Dịch vụ
 ### Giao diện AWS Management Console
 - Giao diện này cho phép người dùng truy cập vào các dịch vụ của AWS và thực hiện các thao tác cần thiết như tạo máy chủ ảo, lưu trữ dữ liệu, và quản lý cơ sở dữ liệu.
-	![[Pasted image 20250208152601.png]]
+	![[AWS/Notes/Module 1/attachments/Management_Console.png]]
 - Menu bên phải của giao diện cung cấp quyền truy cập vào **Support Center**, nơi người dùng có thể tạo các yêu cầu hỗ trợ.
-	![[Pasted image 20250208152622.png]]
+	![[AWS/Notes/Module 1/attachments/Support_Center.png]]
 ### AWS Command Line Interface (CLI)
 - AWS CLI là công cụ mã nguồn mở cho phép người dùng tương tác với các dịch vụ AWS thông qua dòng lệnh.
-	![[Pasted image 20250208152659.png]]
+	![[AWS/Notes/Module 1/attachments/AWS_CLI.png]]
 - Người dùng có thể triển khai các chức năng tương đương với AWS Management Console bằng cách sử dụng các lệnh API. Cách này thường được sử dụng khi cần tự động hóa các tác vụ.
 ## Phát triển Ứng dụng với AWS SDK
 ### Giới thiệu về AWS SDK
 - **AWS SDK** giúp đơn giản hóa quá trình phát triển ứng dụng bằng cách cung cấp một bộ thư viện hỗ trợ nhiều ngôn ngữ lập trình khác nhau.
 - Việc sử dụng SDK giúp kết nối dễ dàng với các dịch vụ của AWS, như lưu trữ dữ liệu trong cơ sở dữ liệu cloud.
-![[Pasted image 20250208152842.png]]
+![[AWS/Notes/Module 1/attachments/AWS_SDK.png]]
 ### Quy trình Sử dụng AWS SDK
 - Thay vì người dùng trực tiếp gửi yêu cầu API, ứng dụng sẽ sử dụng **Access Key** và **Secret Access Key** để tương tác với các dịch vụ AWS.
 - SDK tự động hóa nhiều tác vụ như quản lý thông tin xác thực, retry khi yêu cầu thất bại, và giải mã dữ liệu, giúp tiết kiệm thời gian và công sức cho lập trình viên.
