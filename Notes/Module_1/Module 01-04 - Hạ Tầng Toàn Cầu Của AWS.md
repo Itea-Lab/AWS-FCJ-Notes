@@ -24,7 +24,7 @@
 - **Edge Location** là mạng lưới trung tâm dữ liệu thứ cấp, thiết kế để hỗ trợ các dịch vụ mạng biên, chẳng hạn như **Amazon CloudFront** - một dịch vụ **Content Delivery Network (CDN)**.
 - Tại Việt Nam, đã có hai edge location ở **Hồ Chí Minh** và **Hà Nội**, cho phép sử dụng dịch vụ CDN hiệu quả.
 - Ngoài CloudFront, còn có các dịch vụ khác như **Web Application Firewall (WAF)** và **Route 53** được triển khai tại edge location, cung cấp lớp bảo vệ cho ứng dụng web và quản lý DNS.
-![Edge_Locations](AWS-FCJ-Notes/Notes/Module_1/attachments/Edge_Locations.png)
+![Edge_Locations](attachments/Edge_Locations.png)
 ## Kết luận
 Hạ tầng toàn cầu của AWS không chỉ là một hệ thống phức tạp mà còn là một công cụ mạnh mẽ cho phép các doanh nghiệp tối ưu hóa hiệu suất và tiết kiệm chi phí. Hiểu rõ về trung tâm dữ liệu, availability zone, region, và edge location sẽ giúp các nhà phát triển và doanh nghiệp đưa ra quyết định chính xác hơn trong việc triển khai và quản lý ứng dụng. Sự chú trọng vào hiệu suất và tính sẵn sàng cao sẽ mang lại lợi ích lớn cho doanh nghiệp trong môi trường cạnh tranh hiện nay.
 
