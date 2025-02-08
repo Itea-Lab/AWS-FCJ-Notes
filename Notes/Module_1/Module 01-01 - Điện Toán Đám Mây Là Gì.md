@@ -17,4 +17,4 @@ Khóa học “AWS First Cloud Journey” giúp người học hiểu về đi�
 - 📈 **Quản lý chi phí hiệu quả**: Người dùng cần chú trọng đến chi phí để tối ưu hóa trong quá trình sử dụng dịch vụ AWS.
 - 📝 **Thông tin cốt lõi**: Những thuật ngữ và khái niệm quan trọng cần ghi nhớ để áp dụng hiệu quả trong công việc.
 # Next:
-[[Module 01-02 - Điều Gì Tạo Nên Sự Khác Biệt Của AWS]]
+[[AWS/Notes/Module_1/Module 01-02 - Điều Gì Tạo Nên Sự Khác Biệt Của AWS]]
