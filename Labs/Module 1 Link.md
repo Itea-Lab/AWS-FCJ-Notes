@@ -1,0 +1,12 @@
+- [Module 01-Lab01-01 - Create an AWS account](https://000001.awsstudygroup.com/vi/1-create-new-aws-account/)
+- [Module 01-Lab01-02 - Setup with Virtual MFA Device](https://000001.awsstudygroup.com/vi/2-mfa-setup-for-aws-user-root/)
+- [Module 01-Lab01-03 - Create admin group and admin user](https://000001.awsstudygroup.com/vi/3-create-admin-user-and-group/)
+- [Module 01-Lab01-04 - Account authentication support](https://000001.awsstudygroup.com/vi/4-verify-new-account/)
+- [Module 01-Lab01-05 - Explore and configure the AWS management console](https://000001.awsstudygroup.com/vi/5-explore-and-configure-the-aws-management-console/)
+- [Module 01-Lab07-01 - Create Budget by Template](https://000007.awsstudygroup.com/vi/0-createtemplate/)
+- [Module 01-Lab07-02 - Create Cost Budget Tutorial](https://000007.awsstudygroup.com/vi/1-cost-budgets/)
+- [Module 01-Lab07-03 - Creating a Usage Budget in AWS](https://000007.awsstudygroup.com/vi/2-usage-budget/)
+- [Module 01-Lab07-04 - Creating a Reservation Instance (RI) Budget](https://000007.awsstudygroup.com/vi/3-reservation-budget/)
+- [Module 01-Lab07-05 - Creating a Savings Plans Budget](https://000007.awsstudygroup.com/vi/4-saving-plans-budget/)
+- [Module 01-Lab09-01 - AWS support Packages](https://000009.awsstudygroup.com/vi/)
+- 
