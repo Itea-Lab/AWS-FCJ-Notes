@@ -6,6 +6,7 @@
 - **Khác biệt giữa VPC và Private Cloud truyền thống**:
 	- **Private Cloud truyền thống**: Thường được xây dựng trên cơ sở hạ tầng vật lý tại chỗ (on-premise), sử dụng hệ thống ảo hóa tập trung để mô phỏng các tính năng của đám mây.
 	- **VPC trên AWS**: Là một mạng ảo riêng trong đám mây, không yêu cầu cơ sở hạ tầng vật lý, và được quản lý hoàn toàn bởi AWS.
+	![VPC/PC_Comparison](attachments/Pasted%20image%2020250213151828.png)
 #### 2. Thực hành và lưu ý
 ![Caution](attachments/Pasted%20image%2020250213120353.png)
 ##### **Thực hành**:
@@ -14,24 +15,24 @@
 ##### **Lưu ý**:
   - VPC chỉ cô lập ở mức mạng, không cô lập hoàn toàn các tài nguyên giữa các VPC.
   - Để cô lập hoàn toàn tài nguyên giữa các môi trường (dev, test, production), cần tạo nhiều AWS account thay vì nhiều VPC.
-### **2. Các thành phần chính của VPC**
-##### **CIDR (Classless Inter-Domain Routing)**:
+### 2. Các thành phần chính của VPC
+##### [CIDR (Classless Inter-Domain Routing)](Tài%20liệu%20đọc%20thêm/CIDR.md):
   - Khi tạo VPC, bạn cần khai báo một dải địa chỉ IP (IPv4 hoặc IPv6) để định nghĩa không gian mạng của VPC. Ví dụ: `10.10.0.0/16` là một dải địa chỉ IP cho VPC.
   - CIDR giúp xác định phạm vi địa chỉ IP mà VPC có thể sử dụng, và các subnet sẽ được chia nhỏ từ dải địa chỉ này.
-##### **Subnet (Mạng con)**:
+##### Subnet (Mạng con):
   - Subnet là một phần của VPC, được chia nhỏ từ dải địa chỉ IP của VPC.
   - Mỗi subnet phải nằm trong một **Availability Zone (AZ)** cụ thể. 
-	  - Ví dụ: Subnet A nằm trong AZ 1, Subnet B nằm trong AZ 2.
+	-  Ví dụ: Subnet A nằm trong AZ 1, Subnet B nằm trong AZ 2.
 ![Subnet](attachments/Pasted%20image%2020250213135123.png)
   - Subnet có thể là **Public Subnet** (cho phép truy cập Internet) hoặc **Private Subnet** (không cho phép truy cập Internet trực tiếp).
   - AWS giữ lại 5 địa chỉ IP trong mỗi subnet (địa chỉ network, broadcast, router, DNS, v.v.), nên khi tính toán số lượng địa chỉ IP có thể sử dụng, bạn cần trừ đi 5 địa chỉ này.
 	![Subnet_2](attachments/Pasted%20image%2020250213135710.png)
-##### **Route Table (Bảng định tuyến)**:
+##### Route Table (Bảng định tuyến):
 ![Route_Table](attachments/Pasted%20image%2020250213135955.png)
   - Mỗi VPC có một **Default Route Table** mặc định, không thể xóa, cho phép các subnet trong VPC liên lạc với nhau.
   - Bạn có thể tạo **Custom Route Table** để định tuyến lưu lượng mạng, ví dụ: định tuyến ra Internet thông qua Internet Gateway.
   - Route Table được gán vào các subnet để xác định cách lưu lượng mạng được định tuyến.
-##### **Elastic Network Interface (ENI)**:
+##### Elastic Network Interface (ENI):
 ![ENI](attachments/Pasted%20image%2020250213140317.png)
   - Là card mạng ảo gắn vào máy chủ ảo (EC2), chứa địa chỉ IP private và có thể gán thêm địa chỉ IP public (**Elastic IP**).
 	![Elastic_IP](attachments/Pasted%20image%2020250213142957.png)
@@ -39,7 +40,7 @@
   - ENI giúp linh hoạt trong việc quản lý địa chỉ IP và kết nối mạng giữa các máy chủ.
   - **Gán Subnet**:
 	  ![Public_Subnet](attachments/Pasted%20image%2020250213143332.png)
-##### **VPC Endpoint**:
+##### VPC Endpoint:
 ![VPC_EndPoint](attachments/Pasted%20image%2020250213143425.png)
   - Cho phép kết nối từ các tài nguyên trong VPC đến các dịch vụ AWS khác (như S3, DynamoDB) mà không cần đi qua Internet.
   - Có hai loại VPC Endpoint: 
@@ -95,3 +96,7 @@
 - **Route Table** định tuyến lưu lượng mạng trong VPC.
 - **VPC Endpoint** cho phép kết nối an toàn đến các dịch vụ AWS khác mà không cần Internet.
 - **Thực hành** là cách tốt nhất để hiểu và vận dụng các khái niệm về VPC.
+### Tài liệu đọc thêm
+- [Amazon Virtual Private Cloud (AWS VPC) Benefits & Components](https://k21academy.com/amazon-web-services/aws-vpc-virtual-private-cloud/)
+- [AWS VPC and Subnets – A Comprehensive Guide](https://k21academy.com/amazon-web-services/aws-solutions-architect/aws-vpc-and-subnets/)
+- 
